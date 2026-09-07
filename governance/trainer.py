@@ -1,8 +1,8 @@
 import copy
 from pathlib import Path
 import pandas as pd
-from argo.governance.feedback import FeedbackBuffer
-from argo.data.io_utils import save_dataset_artifact
+from governance.feedback import FeedbackBuffer
+from data.io_utils import save_dataset_artifact
 
 
 class ARGOTrainer:
@@ -59,7 +59,7 @@ class ARGOTrainer:
         # Preferred fast path: run Stage-1 detection once, then reuse it for all
         # neural selectors that expose warmup_from_stage1_cache().
         if warmup_items and all(hasattr(sel, "warmup_from_stage1_cache") for _, sel in warmup_items):
-            from argo.selectors.ide_module import run_stage1_ilde_detection
+            from argo_selectors.ide_module import run_stage1_ilde_detection
 
             stage1_cache = run_stage1_ilde_detection(
                 dataset=self.env.dataset,

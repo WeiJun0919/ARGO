@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 import copy
 import numpy as np
-from argo.governance.operations import apply_operation
-from argo.governance.reward import compute_reward
-from argo.data.diagnostics import compute_diagnostics
+from governance.operations import apply_operation
+from governance.reward import compute_reward
+from data.diagnostics import compute_diagnostics
 
 
 @dataclass
@@ -166,7 +166,7 @@ class ARGOEnv:
         return np.asarray(indices, dtype=int)
 
     def _make_differential_model(self, dataset, clean_indices=None):
-        from argo.models.downstream_model import DifferentialDownstreamModel
+        from models.downstream_model import DifferentialDownstreamModel
         diff_model = DifferentialDownstreamModel(
             base_model=self.model,
             clean_indices=clean_indices,

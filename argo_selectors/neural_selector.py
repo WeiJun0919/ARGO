@@ -1,8 +1,8 @@
 import numpy as np
 
-from argo.data.diagnostics import compute_diagnostics
-from argo.selectors.base_selector import BaseSelector
-from argo.selectors.ide_module import (
+from data.diagnostics import compute_diagnostics
+from argo_selectors.base_selector import BaseSelector
+from argo_selectors.ide_module import (
     PseudoLabelPair,
     run_stage1_ilde_warmup,
     warmup_selector_from_stage1_cache,

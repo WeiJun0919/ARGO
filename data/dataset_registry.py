@@ -8,8 +8,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-from argo.data.dataset import from_arrays_with_clean_labels
-from argo.data.noise import inject_dataset_noise
+from data.dataset import from_arrays_with_clean_labels
+from data.noise import inject_dataset_noise
 
 
 def _find_file(root, names):

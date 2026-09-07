@@ -87,23 +87,23 @@ change triggers exact validation and shared full retraining.
 ## Repository Structure
 
 ```text
-argo/
 ├── data/                 Dataset containers, registry, diagnostics, and noise tools
 ├── governance/           Three-stage trainer, rewards, operations, and feedback
 │   └── proxy_reward/     Uncertainty-aware proxy model and replay buffer
 ├── models/               State encoder and downstream models
 ├── rl/                   Governance environment and high-level PPO agent
-└── selectors/            Operation-specific selectors, ILDE, and ED2
+├── argo_selectors/       Operation-specific selectors, ILDE, and ED2
+└── ui/                   Streamlit demonstration interface
 ```
 
 Important entry points:
 
-- `argo/governance/trainer.py` - Stage I/II/III orchestration.
-- `argo/rl/env.py` - one complete governance transition.
-- `argo/rl/ppo_agent.py` - PPO actor, critic, and adaptive gate.
-- `argo/models/state_encoder.py` - governance-state construction.
-- `argo/selectors/neural_selector.py` - bounded target selection and correction.
-- `argo/governance/proxy_reward/trainer.py` - proxy training and calibration.
+- `governance/trainer.py` - Stage I/II/III orchestration.
+- `rl/env.py` - one complete governance transition.
+- `rl/ppo_agent.py` - PPO actor, critic, and adaptive gate.
+- `models/state_encoder.py` - governance-state construction.
+- `argo_selectors/neural_selector.py` - bounded target selection and correction.
+- `governance/proxy_reward/trainer.py` - proxy training and calibration.
 
 ## Requirements
 

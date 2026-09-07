@@ -12,7 +12,7 @@ import numpy as np
 import torch
 from dataclasses import dataclass
 
-from argo.governance.proxy_reward.model import ProxyRewardMLP
+from governance.proxy_reward.model import ProxyRewardMLP
 
 
 @dataclass

@@ -1,5 +1,5 @@
 import numpy as np
-from argo.selectors.base_selector import BaseSelector
+from argo_selectors.base_selector import BaseSelector
 
 
 class AugmentSelector(BaseSelector):

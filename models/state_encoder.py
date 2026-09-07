@@ -2,7 +2,7 @@ from collections import deque
 
 import numpy as np
 
-from argo.data.diagnostics import compute_diagnostics
+from data.diagnostics import compute_diagnostics
 
 
 class StateEncoder:

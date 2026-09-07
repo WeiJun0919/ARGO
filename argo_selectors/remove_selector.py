@@ -1,6 +1,6 @@
 import numpy as np
-from argo.data.diagnostics import compute_diagnostics
-from argo.selectors.base_selector import BaseSelector
+from data.diagnostics import compute_diagnostics
+from argo_selectors.base_selector import BaseSelector
 
 
 class RemoveSelector(BaseSelector):

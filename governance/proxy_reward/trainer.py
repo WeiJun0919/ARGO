@@ -7,8 +7,8 @@ import time
 import numpy as np
 import torch
 
-from argo.governance.proxy_reward.ensemble import ProxyRewardEnsemble
-from argo.governance.proxy_reward.buffer import ProxyRewardBuffer
+from governance.proxy_reward.ensemble import ProxyRewardEnsemble
+from governance.proxy_reward.buffer import ProxyRewardBuffer
 
 
 class CalibrationResult:

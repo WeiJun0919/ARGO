@@ -1,4 +1,4 @@
-from argo.models.downstream_model import DownstreamModel
+from models.downstream_model import DownstreamModel
 
 
 def infer_model_type(dataset):

@@ -55,7 +55,7 @@ class PseudoLabelPair:
     x_clean: Optional[np.ndarray] = None  # correction target for feature repair
 
 
-from argo.selectors.ed2_module import (
+from argo_selectors.ed2_module import (
     run_ed2_error_detection,
     ED2State,
 )

@@ -1,6 +1,6 @@
 import numpy as np
 
-from argo.selectors.neural_selector import (
+from argo_selectors.neural_selector import (
     NeuralRemoveSelector,
     NeuralRelabelSelector,
     NeuralAugmentSelector,
