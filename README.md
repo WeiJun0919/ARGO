@@ -2,8 +2,8 @@
 
 ## Code Availability
 
-ARGO is an ongoing research project. The source code and associated experimental materials are not publicly available at this time while the research work is ongoing.
+ARGO is part of an ongoing research effort. The source code and associated experimental materials are not publicly available while the related research is in progress.
 
-This repository is currently maintained for project identification and status updates. The availability of the research materials may be updated when the work is ready for public release.
+We plan to make the code publicly available after the related research has been completed. This repository will be updated when the code is ready for release.
 
 Thank you for your understanding.
